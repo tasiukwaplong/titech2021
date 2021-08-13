@@ -683,7 +683,7 @@ function register(newAmount) {
   function payNow(e) {
     e.preventDefault()
     FlutterwaveCheckout({
-      public_key: "FLWPUBK-59f3c84f1cfe03a239d4a72f6a12cf94-X",
+      public_key: "FLWPUBK-d114b1fc5b00db05eb862c22faec0c17-X",
       tx_ref: 'TITECH_' + new Date().getTime() + '' + Math.random().toString(36).slice(2) + '' + Math.floor(Math.random() * 100),
       amount: amount,
       currency: "NGN",
