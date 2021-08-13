@@ -1,0 +1,1490 @@
+/*========================================== MASTER STYLESHEET ===========================================================
+
+	Project     :	CONFERENCE LANDING PAGE
+	Version     :	1.0
+	Last Change : 	22/08/2019
+	Primary Use :   CONFERENCE LANDING PAGE
+
+====================================================================================================================*/
+
+/*========================================== LAYOUT ===================================================================
+
+	 1. GLOBAL CSS
+	 2. COMMON CSS3
+	 3. NAVIGATION
+	 4. BUTTON
+	 5. HEADER
+	 6. ABOUT US
+	 7. LOCATION
+	 8. HIGHTLIGHT
+	 9. SCHEDUEL
+	 10. BOOKNOW
+	 11. WORKSHOP
+	 12. PRICING
+	 13. NEWS
+	 14. TESTIMONIAL
+	 15. COUNTERUP
+	 16. SUBSCRIBE
+	 17. GALLERY
+	 18. CONTACT
+	 19. FOOTER
+	 20. MEDIA QUERIES
+	
+		
+======================================================================================================================*/
+
+/*========================================== COLOR CODES ===============================================================
+
+	Background         :#ffffff [White]
+	Theme Color        :#6433D7 [Blue]
+	Content Color      :#333333 [Black]
+	Button bg Color    :#6433D7 [Blue]
+
+================================================================================================================*/
+
+/*========================================== TYPOGRAPHY =====================================================
+
+	Heading:font-family: 'poppins', sans-serif , Arial , Vedana , 'Trebuchet MS';
+	Body   :font-family: 'open sans', sans-serif;
+
+====================================================================================================================*/
+
+/*========================================== 1.GLOBAL CSS START ===========================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+ body {
+	background: #ffffff;
+	color: #666666;
+	font-family: 'Open Sans', sans-serif, poppins, Arial, Vedana, 'Trebuchet MS';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 24px;
+	margin:0 auto;    
+	max-width: 1500px;
+}
+p {
+	margin-bottom: 0px;
+}
+h1 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 50px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 60px;
+}
+h2 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 50px;
+}
+h3 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+h4 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 35px;
+}
+h5 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+h6 {
+	font-family: 'poppins', sans-serif;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+/* SAFARI CLASS */
+
+.rowsafari {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #0B8E6A;
+	text-decoration: none !important;
+	outline: none !important;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*================================================= 1.GLOBAL CSS END ===================================================*/
+
+/*========================================== 2.COMMON CSS START ===========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0px;
+}
+.img-bottom-space {
+	margin-bottom: 15px;
+}
+.section-space {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.section-margin-bottom {
+	margin-bottom: 15px;
+}
+.section-title {
+	text-align: center;
+	padding-bottom: 50px;
+	width: 50%;
+	margin: 0 auto;
+}
+.section-lightgray-bg {
+	background-color: #f5f5f5;
+}
+.section-white-bg {
+	background-color: #ffffff;
+}
+.section-padding-bottom {
+	padding-bottom: 30px;
+}
+.display {
+	/* Internet Explorer 10 */
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	/* Firefox */
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	/* Safari, Opera, and Chrome */
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+.width-100 {
+	width: 100%;
+}
+
+/*============================================= 2.COMMON CSS END =====================================================*/
+
+/*============================================ 3. NAVIGATION START ======================================================*/
+
+.nav-style {
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 600;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	position: relative;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.navbar-nav {
+	float: right !important;
+}
+.nav-color {
+	-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+	-webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.fixed-top {
+	position: fixed;
+	top: 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #333333;
+}
+.logo-style {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-btn {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navbar-nav .nav-link {
+	background-color: transparent;
+}
+.first-nav {
+	padding: 0px;
+}
+.nav-dark-ul {
+	background-color: #0B8E6A;
+	padding: 20px;
+}
+.nav-dark-li-one {
+	padding-left: 15px;
+	letter-spacing: 1px;
+}
+.nav-dark-li-two {
+	position: relative;
+	letter-spacing: 1px;
+	padding: 20px
+}
+.pre-nav-align {
+	float: right;
+}
+	
+.display-table {
+	display: table;
+}
+.display-table-cell {
+	display: table-cell;
+}
+.pre-navbar .fa-envelope {
+	font-size: 17px;
+	padding-right:5px;
+	vertical-align: middle;
+}
+.pre-navbar .fa-phone:before {
+    font-size: 17px;
+	padding-right:5px;
+	vertical-align: middle;
+	color: #ffffff;
+}
+.navbar .navbar-nav  .nav-style:before  {
+	background-color: #0B8E6A; 
+	content: "";
+    left: 0px;
+    top: -6px;
+	position:absolute;
+	height: 5px;
+	width: 100%;
+	opacity: 0;
+}
+/*============================================================ 3.NAVIGATION END ===================================================*/
+
+/*============================================================= 4.BUTTON START =====================================================*/
+
+.boxed-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	background-color: #0B8E6A;
+	padding: 14px 20px;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	letter-spacing: 1px;
+	border: 1px solid #0B8E6A;
+}
+.btn-wrapper {
+	margin-top: 30px;
+}
+.btn-rounded {
+	border-radius: 5px;
+}
+.boxed-btn:hover {
+	background-color: #ffffff;
+	color: #333333;
+	border: 1px solid #0B8E6A;
+}
+.btn-right-align {
+	padding-right: 15px;
+}
+button:focus {
+	outline:none;
+}
+.btn {
+	display:table;
+}
+.first-btn {
+	display:table-cell;
+	padding-right:15px;
+}
+.second-btn {
+	display:table-cell;
+}
+/*============================================================= 4.BUTTON END ======================================================*/
+
+/*============================================================= 5.HEADER START ======================================================*/
+
+.header-bg {
+	/* background-image: url("../images/g"); */
+	background-image: url("../images/NNL-bg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.btn-right-space {
+	margin-right: 15px;
+}
+.header-p {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #0B8E6A;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.head-top-padding {
+	padding-top:30px;
+}
+.header-line-1 {
+	position: relative;
+	top: -5px;
+}
+.header-line-2 {
+	position: relative;
+	top: -5px;
+}
+/*================================================================== 5.HEADER END ===================================================*/
+
+/*=========================================================== 6.ABOUTUS AREA START ====================================================*/
+
+.about-subhead-bottom-space {
+	margin-bottom: 30px;
+}
+.box {
+	position: relative;
+	overflow: hidden;
+}
+.box:before {
+	content: "";
+	background-color: #0B8E6A;
+	width: 100%;
+	height: 35%;
+	border-top: 5px solid #fff;
+	opacity: 0;
+	filter: blur(5px);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+.box:hover:before {
+	opacity: 0.8;
+	filter: blur(0);
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+.box img {
+	width: 100%;
+	height: auto;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+.box:hover img {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	filter: hue-rotate(180deg) grayscale(80%);
+}
+.box .box-content {
+	text-align: right;
+	opacity: 0;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 1;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+.box:hover .box-content {
+	opacity: 1;
+	right: 25px;
+	bottom: 23px;
+}
+.box .title {
+	color: #fff;
+}
+.box .post {
+	color: #fff;
+	letter-spacing: 1px;
+}
+.box .icon {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	transform: rotateY(90deg);
+	-webkit-transform: rotateY(90deg);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+.box:hover .icon {
+	transform: rotateY(0);
+	-webkit-transform: rotateY(0);
+}
+.box .icon li {
+	display: inline-block;
+}
+.box .icon li a {
+	color: #fff;
+	background-color: #0B8E6A;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	margin: 0 3px;
+	border-radius: 50%;
+	box-shadow: 0 0 2px #fff inset, 0 0 0 5px rgba(255, 255, 255, 0.8);
+	display: block;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+.box .icon li a:hover {
+	color: #0B8E6A;
+	background-color: #ffffff;
+	border: none;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+/*============================================================ 6.ABOUTUS AREA END =====================================================*/
+
+/*============================================================= 7.LOCATION AREA START =================================================*/
+
+.pro-second-col {
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+}
+.pro-second-row {
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+}
+.pro-col-border {
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+.second-col-border-bottom {
+	border-bottom: 1px solid;
+}
+.pro-row-border-right {
+	border-right: 1px solid;
+}
+.grouping-h4-date-margin {
+	margin-bottom: 10px;
+}
+.location-second-col {
+	padding-left: 30px;
+}
+/*=================================================== 7.LOCATION AREA END ======================================================*/
+
+/*=================================================== 8.HIGHTLIGHT AREA START ================================================*/
+
+.highlight-box {
+	background: #ffffff;
+	border-radius: 5px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	border: 1px solid #eeeeee;
+}
+.highbox-top-content {
+	background-color: #D4EFDF;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+}
+.highbox-bottom-content {
+	padding: 30px;
+	text-align: center;
+}
+/*======================================================= 8.HIGHTLIGHT AREA END ==================================================*/
+
+/*==================================================== 9.SCHEDUEL AREA START ===================================================*/
+
+.schedule-box-one {
+	background-color: #f5f5f5;
+	text-align: center;
+	border-radius: 5px;
+}
+.schedule-col-padding {
+	padding: 0px;
+}
+.first-col-padding {
+	padding: 30px;
+}
+.styles {
+	font-size: 60px;
+	line-height: 46px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	position: absolute;
+	left: 55px;
+	top: 70px;
+}
+.scheduel-p {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: absolute;
+	right: 38px;
+	bottom: 75px;
+}
+.scheduel-row-bottom-space {
+	margin-bottom: 30px;
+}
+.scheduel-row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.scheduel-two-col {
+	padding: 0px;
+	position: relative;
+}
+.schedule-page-content {
+	margin-bottom: 20px;
+	text-align:left;
+    color: #0B8E6A;
+	font-size: 17px;
+    font-weight: 600;
+	letter-spacing:1px;
+}
+.nav-tabs-scheduel {
+	border: none;
+	display: block;
+	text-align: center;
+	font-size: 0;
+}
+
+.nav-tabs-scheduel .nav-item .nav-link.active {
+	color: #fff;
+	background-color: #0B8E6A;
+	border: none;
+}
+.nav-tabs-scheduel .nav-link {
+	border: none;
+	border-radius: 5px;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 30px;
+	color: #333333;
+	background-color: #f6f2fd;
+	font-size: 16px;
+	font-weight: 600;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	width: 215px;
+}
+/*===================================================== 9.SCHEDUEL AREA END ======================================================*/
+
+/*===================================================== 10.BOOKNOW AREA START ====================================================*/
+
+.booknow-bg {
+	background-color: #188906;
+	border-radius: 4%;
+	/* opacity: 0.3; */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.book-day-col {
+	font-size: 55px;
+	line-height: 46px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.title-booknow {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.booknow-second-col-border {
+	border-right: 1px solid #ffffff;
+}
+/*======================================================= 10.BOOKNOW AREA END ===============================================*/
+
+/*=================================================== 11.WORKSHOP AREA START ==========================================*/
+
+.how-it-work-tab-nav {
+	margin-bottom: 30px;
+}
+.tab-body-bg {
+	background-color: #f5f5f5;
+	padding: 30px 15px;
+}
+.nav-tabs {
+	border: none;
+	display: block;
+	text-align: center;
+	font-size: 0;
+}
+.nav-item {
+	display: inline-block;
+	padding-left: 15px;
+	border-radius: 25px;
+}
+.nav-tabs .nav-item .nav-link.active {
+	color: #fff;
+	background-color: #0B8E6A;
+	border: none;
+}
+.nav-tabs .nav-link {
+	border: none;
+	border-radius: 5px;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 30px;
+	color: #333333;
+	background-color: #f6f2fd;
+	font-size: 16px;
+	font-weight: 600;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	width: 215px;
+}
+.bullets p::before {
+	display: inline-block;
+	content: '';
+	border-radius: 0.375rem;
+	height: 0.75rem;
+	width: 0.75rem;
+	margin-right: 0.5rem;
+	background-color: #0B8E6A;
+}
+.work-it {
+	margin-bottom: 5px;
+}
+.left-content-area {
+	text-align: left;
+}
+.nav-tabs li a:before,
+.nav-tabs li a:after {
+	content: "";
+	width: 20%;
+	height: 3px;
+	background: #0f4c5c;
+	position: absolute;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.nav-tabs li a:before {
+	top: -5px;
+	left: 0;
+}
+.nav-tabs li a:after {
+	bottom: -5px;
+	right: 0;
+}
+.nav-tabs li a:hover:before,
+.nav-tabs li a:hover:after,
+.nav-tabs li a.active:before,
+.nav-tabs li a.active:after {
+	width: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/*==================================================== 11.WORKSHOP AREA END ==============================================*/
+
+/*========================================================= 12.PRICING AREA START =============================================*/
+
+.single-price-plan {
+	text-align: center;
+	border: 1px solid;
+	border-radius: 5px;
+	padding-bottom: 30px;
+}
+.price-header {
+	border-bottom: 1px solid;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.name {
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #fff;
+}
+.price-body {
+	padding-top: 25px;
+}
+.price-wrap {
+	margin-bottom: 15px;
+}
+.price {
+	font-size: 48px;
+	line-height: 50px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.month {
+	font-size: 17px;
+}
+.price-body-para {
+	display: block;
+	margin-bottom: 25px;
+	margin-left: 40px;
+	margin-right: 40px;
+	border-bottom: 1px solid;
+	transition: all 0.3s ease-in;
+}
+.price-body-para p {
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+.right-icon p::before {
+	color: #0B8E6A;
+	content: "\f00c";
+	font-size: 25px;
+	font-family: fontawesome;
+	padding-right: 15px;
+	left: 0px;
+	transition: all .3s ease;
+	vertical-align: top;
+}
+.wrong-icon p::before {
+	color: #ff6347;
+	content: "\f00d";
+	font-size: 25px;
+	font-family: fontawesome;
+	padding-right: 15px;
+	left: 0px;
+	transition: all .3s ease;
+	vertical-align: top;
+}
+/*==================================================== 12.PRICING AREA END =============================================*/
+
+/*============================================== 13.NEWS AREA START ==================================================*/
+
+.news-date {
+	display: table-cell;
+	background-color: #0B8E6A;
+	padding: 10px 20px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	letter-spacing:1px;
+}
+.news-sub-head {
+	display: table-cell;
+	padding-left: 15px;
+}
+.link-mar-top {
+	margin-top: 10px;
+}
+.read-font {
+	color: #0B8E6A;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.news-date-style {
+	font-size: 20px;
+	font-weight: 600;
+}
+.news-month-style {
+	font-size: 16px;
+	font-weight: 600;
+}
+/*================================================== 13.NEWS AREA END ===========================================*/
+
+/*================================================= 14.TESTIMONIAL AREA START ========================================*/
+
+.slider-des {
+	display: table;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.media-left-test {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 75%;
+	text-align: center;
+}
+.testimonial-p-letter {
+	letter-spacing: 1px;
+}
+.owl-prev {
+	position: absolute;
+}
+.owl-next {
+	position: absolute;
+}
+.owl-prev:after,
+.owl-next:after {
+	font-family: fontawesome;
+	font-weight: 900;
+	font-size: 30px;
+	color: #0B8E6A;
+	opacity: 1;
+}
+.owl-next:after {
+	content: "\f105";
+}
+.owl-prev:after {
+	content: "\f104";
+}
+.img-right-align {
+	text-align: right;
+}
+.img-left-align {
+	text-align: left;
+}
+/*============================================== 14.TESTIMONIAL AREA END ================================================*/
+
+/*=================================================== 15.COUNTERUP AREA START ========================================*/
+
+.count-num {
+	font-size: 36px;
+	line-height: 46px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.title-counterup {
+	font-size: 15px;
+	line-height: 26px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+/*==================================================== 15.COUNTERUP AREA END  =============================================*/
+
+/*======================================================== TEAM AREA START ======================================================*/
+.card-overlay {
+	background-color: #0B8E6A;
+	text-align:center;
+	padding:10px;
+	opacity:0.8;
+}
+.card-padding {
+	padding:50px;
+}
+.card-content {
+	padding-right: 20px;
+    padding-left: 20px;
+	text-align:center;
+	margin:0;
+    padding-bottom:25px;
+	padding-top:15px;
+	font-family: open sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+.team-relative {
+	position:relative;
+}
+.card-border {
+    border: 1px solid rgba(0,0,0,.125);
+}
+.col-img4 {
+    padding-bottom: 15px;
+}
+.team-absolute {
+	position:absolute;
+	 width: 100%;
+    bottom: 0px;
+}
+.ul-col-img {
+	display:table;
+	text-align:center;
+	margin:auto;
+}
+.li-col-img {
+	display:table-cell;
+}
+.team-icon {
+	border-radius: 25px;
+}
+small {
+	    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.team-p {
+	letter-spacing:1px;
+}
+.team-heading-margin-bottom {
+	margin-bottom:10px;
+}
+.team .fa-youtube:before {
+	content: "\f167";
+    font-size: 25px;
+	padding-right:0px;
+	color:#0B8E6A;
+}
+.team .fa-twitter:before {
+	content: "\f099";
+    padding-right: 15px;
+    font-size: 25px;
+	color:#0B8E6A;
+}
+.team .fa-facebook:before {
+	content: "\f09a";
+    padding-right: 15px;
+    font-size: 25px;
+	color:#0B8E6A;
+}
+/*=========================================================== TEAM AREA END =====================================================*/
+/*======================================================= 17.GALLERY AREA START ===================================================*/
+
+.content-tot-pad {
+	padding-bottom: 30px;
+}
+.filter-options {
+	margin-bottom: 30px;
+	padding-left: 0;
+	text-align: center;
+}
+.filter-options li {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	padding: 0px 0 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.gallery-img-bottom-space {
+	padding-bottom: 30px;
+}
+.filter-options li.active {
+	color: #0B8E6A;
+}
+/*====================================================== 17.GALLERY AREA END ===============================================*/
+
+/*====================================================== 18.CONTACT AREA START =======================================*/
+
+.contact-bg {
+	background-image: url("../images/NNL-bg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.form-input {
+	border: 1px solid #ededed;
+	height: 54px;
+	width: 100%;
+	padding: 0 35px;
+	min-height: 0px;
+	font-size: 15px;
+	font-weight: 400;
+	color:#666666;
+	line-height:20px;
+	position: relative;
+}
+.submit-btn {
+	padding: 15px 20px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	text-transform: capitalize;
+	background-color: #ff6780;
+	border: none;
+	cursor: pointer;
+}
+.form-control-text {
+	border: 1px solid #ededed;
+	height: 60px;
+	padding: 15px 35px;
+	min-height: 150px;
+	width: 100%;
+	color:#666666;
+	font-size: 15px;
+	font-weight: 400;
+	position: relative;
+	border-radius: 5px;
+}
+.form-textarea-top-spacing {
+	padding-top: 30px;
+}
+.form-res .form-textarea-top-spacing label {
+	color: #ff0000;
+	font-weight: 600;
+	margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.username-icon:before {
+	content: "\f007";
+	font-size: 16px;
+	font-family: fontawesome;
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	left: 24px;
+	vertical-align:middle;
+}
+.phone-icon:before {
+	content: "\f095";
+	font-size: 16px;
+	font-family: fontawesome;
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	left: 24px;
+	vertical-align:middle;
+}
+.email-icon:before {
+	content: "\f0e0";
+	font-size: 16px;
+	font-family: fontawesome;
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	left: 24px;
+	vertical-align:middle;
+}
+.message-icon:before {
+	content: "\f086";
+	font-size: 16px;
+	font-family: fontawesome;
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	left: 24px;
+	vertical-align:middle;
+}
+.form-input::placeholder  {
+	color:#666666;
+}
+textarea::placeholder  {
+	color:#666666;
+}
+/*================================================ 18.CONTACT AREA END ======================================*/
+
+/*================================================= 19.FOOTER AREA START ====================================*/
+
+.footer-area {
+	background-color:#333333;
+}
+.footer-top {
+	padding: 80px 0 80px 0;
+}
+.footer-li-icon {
+	display: table-cell;
+}
+.footer-li-icon-first {
+	padding-left: 0px;
+}
+.footer-li-icon-last {
+	padding-right: 0px;
+}
+.footer-li-space {
+	list-style-type: none;
+	padding: 5px 0;
+}
+.footer-li-space:last-child {
+	padding-bottom: 0px;
+}
+.footer-li-space:first-child {
+	padding-top: 0px;
+}
+.footer-list-name {
+	letter-spacing: 1px;
+}
+.reach-img-display {
+	display: table-cell;
+	vertical-align:middle;
+}
+.reach-us-contant-display {
+	display: table-cell;
+	padding-left: 15px;
+}
+.para {
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+	word-break: break-word;
+}
+.reach-us-contant-para {
+	margin-bottom: 20px;
+}
+.footer-social-icon {
+	border-radius: 50%;
+}
+.copy-right {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+}
+.line-mar {
+	margin-top: 15px;
+	border-top: 1px solid;
+}
+.footer-align {
+	text-align: center;
+}
+.fa-send:before,
+.fa-paper-plane:before {
+	padding-right: 5px;
+	color: #1ac797;
+}
+.fa-facebook-f:before,
+.fa-facebook:before {
+	content: "\f09a";
+	padding-right: 15px;
+	font-size: 20px;
+	color: #1ac797;
+}
+.fa-twitter:before {
+	content: "\f099";
+	padding-right: 15px;
+	font-size: 20px;
+	color: #1ac797;
+}
+.fa-youtube:before {
+	content: "\f167";
+	padding-right: 15px;
+	font-size: 20px;
+	color: #1ac797;
+}
+.fa-instagram:before {
+	content: "\f16d";
+	font-size: 20px;
+	color: #1ac797;
+}
+
+.fa-map-marker:before {
+    content: "\f041";
+    font-size: 22px;
+	color: #1ac797;
+}
+.fa-phone:before {
+    content: "\f095";
+    font-size: 22px;
+	color: #1ac797;
+}
+.footer-area .fa-envelope {
+	font-size:22px;
+	color: #1ac797;
+}
+
+.fa-external-link:before {
+	content: "\f08e";
+	font-size:22px;
+	color: #1ac797;
+}
+/*=============================================== 19.FOOTER AREA END =========================================*/
+
+/*============================================= 20.MEDIA QUERIES START ========================================*/
+
+@media only screen and (max-width: 991px) {
+	.section-space {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.navbar-collapse {
+		max-height: 180px;
+		overflow: auto;
+	}
+	.navbar-nav {
+		float: left !important;
+	}
+	.nav-style {
+		padding-left: 5px !important;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.nav-btn {
+		padding-left: 0px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	h2 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+	h3 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	h4 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.header-bg {
+		padding-bottom: 130px;
+		padding-top: 130px;
+	}
+	.header-p {
+		font-size: 30px;
+		line-height: 35px;
+		font-weight: 600;
+		width: 100%;
+	}
+	.section-title {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.header-p {
+		width: 45%;
+	}
+	.pro-second-col {
+		padding: 0px 15px 30px 15px;
+	}
+	.schedule-box-one {
+		padding: 30px 15px;
+	}
+	.highlight .res-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.team .res-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.tab-body-bg {
+		padding: 30px 0px;
+	}
+	.media-left-test {
+		width: 100%;
+	}
+	.location-second-col {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px !important;
+	}
+	.booknow-second-col-border {
+		border: none;
+	}
+	.res-sec-margin-bottom {
+		margin-bottom: 0px;
+	}
+	.res-padding-bottom {
+		padding-bottom: 30px;
+	}
+
+	.styles {
+		position: inherit;
+		top: auto;
+		left: auto;
+		margin-bottom:0px;
+	}
+	.scheduel-p {
+		position: inherit;
+		bottom: auto;
+		right: auto;
+		margin-left: 10px;
+	}
+	.price {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+	.count-num {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.sec-text-center {
+		text-align:center;
+	}
+	.margin-auto {
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.nav-item {
+		padding-bottom: 25px;
+		padding-left: 0px;
+	}
+	.header-p {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 361px) {
+	.btn-right-space {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 991px) {
+	.subscribe-bg .form-input {
+		width: 350px;
+		margin: 0 auto;
+	}
+	.single-price-plan {
+		width: 350px;
+		margin: 0 auto;
+	}
+	.schedule-box-one,
+	.res-news-area {
+		width: 350px;
+		margin: 0 auto;
+	}
+	
+}
+@media only screen and (min-width: 441px) and (max-width: 575px) { 
+	.header-p {
+		width: 60%;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+	.nav-item {
+		padding-bottom: 25px;
+		padding-left: 25px;
+	}
+	.box,
+	.highlight-box {
+		width: 280px;
+		margin: 0 auto;
+	}
+	
+}
+@media only screen and (max-width: 575px) { 
+	
+	.book-res-margin-bottom {
+		margin-bottom:30px;
+	}
+	.book-day-col {
+    font-size: 45px;
+    line-height: 55px;
+	}
+	.price-body-para {
+		margin-right:20px;
+		margin-left:20px;
+	}
+	.pro-col-border,
+	.second-col-border-bottom,
+	.pro-row-border-right {
+		border:none;
+	}
+	.pro-second-row {
+		padding-bottom:0px;
+	}
+	.book-res-margin-auto {
+		margin: 0 auto;
+	}
+	.pre-nav-align {
+		float: none;
+	}
+	.display-table {
+		display: inherit;
+	}
+	.display-table-cell {
+		display: inherit;
+	}
+}
+@media only screen and (max-width: 384px) { 
+	.first-btn {
+		display:inherit;
+		padding-bottom:20px;
+		padding-right:0px;
+	}
+	.second-btn {
+		display:inherit;
+		margin:auto;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.res-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.res-sec-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.width-100 {
+		width: auto;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.scheduel-p {
+		right: 23px;
+		bottom: 50px;
+	}
+	.styles {
+		left: 47px;
+		top: 50px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.highlight-box {
+		width: 280px;
+	}
+	.float-right-align {
+		float: right;
+	}
+	.float-left-align {
+		float: left;
+	}
+	.left-content-area {
+		text-align:center;
+	}
+	.right-content-area {
+		text-align:center;
+	}
+}
+@media only screen and (min-width: 332px) and (max-width: 991px) {
+	.card-border {
+		width: 300px;
+		margin: 0 auto;
+
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.res-book-padding {
+		padding-bottom:30px;
+	}
+}
+
+/* SAFARI MENU ISSUES*/
+
+@media only screen and (min-width: 992px) {
+	/*safari Browser*/
+	.navbar-expand-lg .navbar-collapse {
+		float: right !important;
+		display: block !important;
+		line-height: 24px !important;
+	}
+	.navbar-expand-lg .safari-menu {
+		display: inline-block !important;
+		vertical-align: middle !important;
+	}
+}
+/*=================================================== 20.MEDIA QUERIES END =========================================================*/
